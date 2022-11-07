@@ -1,0 +1,325 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Crop Planning Optimization\\
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Ravindersingh  Khalsa}
+\IEEEauthorblockA{\textit{B.Tech (ICT)} \\
+\textit{DA-IICT}\\
+Gandhinagar, India \\
+201901179@daiict.ac.in}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Nisarg C Bhalia}
+\IEEEauthorblockA{\textit{B.Tech (ICT)} \\
+\textit{DA-IICT}\\
+Gandhinagar, India \\
+201901220@daiict.ac.in}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Parmar Manan Vinodkumar}
+\IEEEauthorblockA{\textit{B.Tech (ICT)} \\
+\textit{DA-IICT}\\
+Gandhinagar, India \\
+201901237@daiict.ac.in}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Baveet Singh Hora}
+\IEEEauthorblockA{\textit{B.Tech (ICT)} \\
+\textit{DA-IICT}\\
+Gandhinagar, India \\
+201901256@daiict.ac.in}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Jitanshu Shaw}
+\IEEEauthorblockA{\textit{B.Tech (ICT)} \\
+\textit{DA-IICT}\\
+Gandhinagar, India \\
+201901292@daiict.ac.in}
+}
+
+\maketitle
+
+\begin{abstract}
+In this modern era, with advancement in agriculture and increasing pressure on land and other resources, coupled with increased specialization in machinery and equipment used, the development of more efficient and planned methods based on the construction and analysis of a mathematical model has been sparked in the agricultural sector. Since its introduction, mathematical programming models have been applied directly or indirectly in the agricultural sector and have contributed significantly in the analysis of policy issues such as resource allocations, investment decisions, comparative advantage, risk analysis etc. Earlier crop planning studies were done based on farm level allocations. Upper two examples are the surveys in reviewing agricultural planning methods. Norton and Schiefer highlighted various mathematical programming models broadly used for agricultural sector planning with special emphasis on questions of appropriate model structures for replication of sector behavior and on the reliability of computed results.Another by Glen made a survey on mathematical models in farm level planning.
+\end{abstract}
+
+\section{Introduction}
+In traditional agriculture, crop planning decisions were mainly guided by the farmer's own judgment and experience. In this modern era, with advancement in agriculture and increasing pressure on land and other resources, coupled with increased specialization in machinery and equipment used, the development of more efficient and planned methods based on the construction and analysis of a mathematical model has been sparked in the agricultural sector. Since its introduction, mathematical programming models have been applied directly or indirectly in the agricultural sector and have contributed significantly in the analysis of policy issues such as resource allocations, investment decisions, comparative advantage, risk analysis etc. Earlier crop planning studies were done based on farm level allocations. Later, such exercises have been extended to a regional level to aid in planning at broader horizons (Norton and Schiefer 1980).
+\\\\
+Upper two examples are the surveys in reviewing agricultural planning methods.
+\\\\
+\textbf{Norton and Schiefer (1980)} highlighted various mathematical programming models broadly used for agricultural sector planning with special emphasis on questions of appropriate model structures for replication of sector behavior and on the reliability of computed results.
+\\\\
+\textbf{Model’s Problem} - the review was focused mainly on the approaches and did not consider how to deal with practical issues related to development of such models under various different situations. Further, there was not much sophisticated model management software available for implementing such models at that time.
+\\\\
+\textbf{Another by Glen (1987)} made a survey on mathematical models in farm level planning. 
+\\\\
+\textbf{Model’s Problem} - the study was exclusively for problems related to the developed world and did not consider regional level planning.
+\\\\
+\textbf{Weintraub et al. (2001)} presented a review on operation research models and management of renewable natural resources. There are attempts that were not very optimal and effective. To bring optimization practically, we have to manage objectives and constraints efficiently. Other aspects such as function, seasonal issues, and sensitivity are also taken into account. 
+\\\\
+\textbf{\underline{Scope of optimization techniques}}
+\\\\
+\textbf{In 1982, Norton and Kutcher came up with a mathematical programming model} for agriculture into five distinct levels: the farm, the district, the region, the sector, and for multiple countries which engage in mutual agricultural trade. The district level is a collection of farms, which is a small-scale optimization. As we increase the number of farms and areas, the optimization becomes more and more complex as constraints, objectives, seasons as well function changes. Proper explanation and elaboration is given in a survey below (Weintraub et al 2001). Some farmers would maximize the crop production while some would minimize their investment in planting. 
+\\\\
+\textbf{Weintraub et al. (2001)} in their review of operational research methods grouped scope of optimization into two broad models that are farm level and regional level.
+\\\\
+At the local level, decisions are made based on the physical and financial constraints that exist on the farm, and often in the face of significant uncertainty in predicted yields, costs, and commodity prices (Hazell and Norton 1986). At this level, objective functions focus primarily on farmers' immediate needs in terms of food and cash requirements for their homes, as well as sufficient resources for the following farming season. Profit maximisation and/or expense minimization are two basic objective functions for a farmer.
+\\\\
+Local people's expertise and contributions also aid in the formulation of models and policies that meet the people's goals. Because each farmer has limited resources at their disposal for every planning period, the technical coefficients are also easy to determine at the local level. A farm's production potential, on the other hand, is limited because it is constrained by fixed resources for a specific period of time (Weintraub et al. 2001).
+\\\\
+Conflicts of interests also arise, as the local interests may not align with regional or national interests or sustainable objectives Thus, crop planning at a broader level becomes imperative in consultation with the micro level planning objectives.
+\\\\
+Significant test in creating ideal models for crop arranging at public level is the incorrect recorded information of land, environment, any disasters or lack occurs, and so on This by and large occurs in non-industrial countries. One more significant test if there should arise an occurrence of provincial arranging was the collection issue (Weintraub et al 2001). At the point when the investigator moves from ranch level to local level, ranch level information are utilized after required alterations in innovative coefficients from the homestead levels. As homesteads considered in a locale or area model are not the same, it is, in this manner, difficult to think about the district or area as a solitary ranch. Henceforth, pick the fitting conglomeration rules to limit the total inclination. For managing issues, expanding destinations and limitations will help.
+
+ \\\\
+At the public level, arranging is worried about public objectives and the distribution of assets. By and large, public land-use arranging doesn't include the real designation of land for various utilizations, yet the foundation of needs for locale level tasks. Public objectives are perplexing, arrangement choices, enactment, and financial measures influence individuals and wide regions.
+\\\\
+\textbf{According to Norton and Kutcher} complexity of agricultural decision making is increased by the multiple and often conflicting objectives of governments. Some are –
+
+\begin{itemize}
+    \item {Provision of an adequate supply of food for the population at affordable prices.}
+    \item {Simulation of foreign exchange earnings or savings from agricultural exports or import substitution.}
+    \item {Generation of adequate levels of employment and income for farm workers.}
+    \item {Improvement of income in backward regions.} 
+    \item {Preserve ecological balances.}
+\end{itemize}
+If the government raises the income of farmers, it would also affect the cost of food in urban areas. As costs/prices increase, the weaker or poorer sections in the city suffer the most.
+\\\\
+\textbf{Objectives and constraints}
+\newline
+The most regularly utilized objective capacities in crop arranging are expansion of net income, benefit, pay, generally speaking commitment of the farming area, business or minimization of information costs, water utilization, disintegration and normal assets. These would have further limitations like land, hazard, vulnerability, cataclysm, capital. For the model to be down to earth, non-ordinary imperatives are being added for work.
+
+\begin{itemize}
+    \item {\textbf{Maleka (1993)} used a constraint, namely, cost of risk taking along with conventional constraints like land, labor, cash capital and soil moisture and objective function based on maximization of gross margins of crops.}
+    \item {\textbf{Soil moisture constraint} the water requirement for all the crops considered for model should be less than or equal to the amount of rainfall from the simulated rainfall values measured in ha-mm for a particular zone. }
+    \item {\textbf{Tajuddin et al. (1994)} developed optimum crop mix based on minimum cereal requirement as one important constraint along with other restrictions like land, labour, bullock labor, tractor, power tiller, and capital. The model was further modified by introducing import restriction mainly on cereals at different levels and the results were good and effective, the new model can contribute to achieve self-sufficiency in food grains.}
+\end{itemize}
+Horticultural arranging issues include numerous clashing objectives, for example, \textbf{boosting crop creation, expanding benefit, limiting work costs, limiting water use and other information costs without compromising with supportability of normal assets.} In any case, it is absurd to expect to accomplish all ideal destinations at the same time as specific goals must be accomplished to the detriment of others.
+
+
+\section{Brief literature review}
+Various approaches for crop planning Optimization approaches can be broadly put into linear and non-linear categories. 
+\newline
+\begin{itemize}
+    \item LP - Linear programming 
+    \item MOTAD - Minimization of total absolute deviations
+    \item FGP - Fuzzy/Fractional goal programming
+    \item DSS - Decision support system
+    \item DLP- Deterministic LP
+    \item CCLP-Chance constrained LP
+\end{itemize}
+Linear programming (LP) has been widely applied in agriculture since the 1950s. The earlier model of linear programming technique in crop planning problems includes Wauh in 1951, Heady in 1954, Love in 1956. All crop planning for starting farmers was done by Love at the same time Waugh (1951) applied Linear Programming technique for problem of minimization of cost for feeding of dairy cows. Many studies have suggested Linear Programming as an efficient tool that can be used in various decision-making problems. That in agriculture as it can efficiently handle a large number of linear constraints and variables simultaneously (Weintraub et al. 2001).
+\\\\
+Linear programming formulation is given for the problem of allocating the available land in the various agro climatic zones to the different crops. Besides the restriction on the land under cultivation, a minimum amount of production is specified for each crop.
+\\\\
+Some used LP to determine the optimal area under different crops and amount of surface and groundwater used to get maximum benefit in Punjab. \textbf{Mai et al.} (1984) employed LP technique to obtain an \textbf{optimum crop combination to get maximum benefit for rabi season} in Debra block of Midnapore district, West Bengal and suggested paddy, gram, mustard and potato to be grown under lift irrigation without canal supply for achieving maximum benefit. \textbf{Karunakaran et al. (2012)} used LP based approach to assess the sustainability of the current land use pattern in crop agriculture in the Bhavani Basin of Southern India based on soil characteristics, land and water availability. 
+\\\\
+However, despite these wide applications, simplicity, and versatility of linear programming approach in optimization problems in crop planning, there are situations in farm planning, which cannot be accurately modelled with the use of the basic LP models. \textbf{There are cases where the decision variables cannot take continuous values or where a certain activity, if it is to be produced, must be set, at least, to a certain minimum level, or cases involving risk and uncertainty etc.}Further, many of the real world or agricultural variables are not linear in function. \textbf{As a result, basic LP models become inefficient in cases where assumptions of linearity do not hold good. In order to deal with such issues other models, e.g. modified linear, non-linear or mixed models} are in use.
+\\\\
+Models such as Deterministic Linear Programming (DLP) model, Chance Constraint Linear Programming Model , multiple stage linear programming,dynamic programming, Fuzzy Goal Programming , Quadratic programming , target MOTAD model.
+\begin{itemize}
+    \item	\textbf{Deterministic global optimization methods (DLP)} are typically used when locating the global solution is a necessity. Linear Programming models are good and efficient for small scale areas like farms and district level, but when it comes to finding optimal solutions for the whole nation where farmers think differently with different cultures, DLP is better suited here.
+    \item \textbf{Chance Constraint Linear Programming Model (CCLP)} - The chance-constrained programming (CCP) method has the ability to deal with random parameters that are uncertain like calamity constraints (which are uncertain). Optimal cropping pattern decisions without consideration to water supply uncertainty would result in yield/benefit that is lower than the presumed and probability of system failure that helps in meeting a given irrigation demand. In other words, it restricts the feasible region so that the confidence level of the solution is higher.Chance constraint linear programming (CCLP) model was used for optimizing cropping patterns for major crops grown at Irrigation scheme at Koga, Ethiopia.
+    \item \textbf{Multiple stage linear programming} - A multi-stage linear program is defined as with linking variables that connect progressive stages. Optimal conditions for the composite problem are partitioned into local and linking conditions. A multi-stage Linear Programming model that \textbf{determines the optimal cropping plan} which is, crops to be grown and in each agricultural region in order to maximize the farmer's economic net return during the planning horizon.
+    \item \textbf{Fuzzy goal programming (FGP)} approach for optimal allocation of land under cultivation and proposes an annual agricultural plan for different crops. In the model formulation, goals such as crop production, net profit, water and labor requirements, and machine utilization are modeled as fuzzy. 
+\end{itemize}
+\textbf{Some studies have suggested a computer program so-called P R.I.S.C.O for the application of risky simulations on linear programming models} developed the Deterministic linear programming, DLP and chance-constrained linear programming, CCLP models as a non-structural measure to assign available land, water, etc resources optimally on a seasonal basis to maximize the net annual return from the study area. Tsai et al. in the year 1987 developed a combined network optimization-simulation model for optimal sequencing of multiple cropping systems.
+\\\\
+\textbf{Many researchers supported Fuzzy Goal Programming (FGP) to be an effective tool in most agricultural planning problems} where values of some parameters are not be known precisely and when in addition to economic goals, environmental goals are considered (Sharma et al. in the year 2007, Mohaddes and Mohayidin in the year 2008, Abadi et al. in the year 2009, Soltani et al. in the year 2011).
+\\\\
+The discoveries from these studies recommended that at whatever point PC based models can be run intuitively and the outcomes can be made accessible rapidly, the LP procedures significant change on farmers' decision-making behaviour.  c. Albeit the point is to further develop settling on choice, still not very many models are being used straight by farmers (Glen 1987). LP strategies are helpful for settling on easy to understand choice emotionally supportive networks (Papathanasiou et al. 2005, Sethi and Panda 2011). Martina et al. (2015) has likewise evolved one such \textbf{DSS} dependent on the new Common Agricultural Policy of the European Union and applied it to Spanish rural/agricultural locales.
+
+\section{Plan of work}
+Taking Linear Programming as our tool to solve problems, also as we increase our constraints, the accuracy and scope of our work would increase. The problem can handle many cases, giving more accurate feasible regions even in rare cases.
+\\\\
+\textbf{Constraints bound the function, and adding them is never a loss. Some are}
+\begin{itemize}
+    \item \textbf{Ecological constraints:}\\ Average landholdings of households is less than one hectare and the possibility of expansion is practically non-existent (legally). Based on results of house based surveys, the total collection land size for crop production (L) is the sum of land assigned for the purpose of production of crop from individual households that were surveyed. A lot of another crop-specific ecological constraints, such as land gradient, adjacency to critical resources, such as water, forest bodies and as well as crop rotation could also be included in the model. Therefore, Namely, the sum of land allocated among selected crops, Li, i = 1,2,3, . . . n, could not exceed the total land size L that is available for crop production: \\
+    \[ \sum_{i=1}^{n} L_{i} \leq L \]
+    \item \textbf{Aggregated Crop Budget Constraint:}\\ In light of family overviews, key witness meets, the expense per hectare of each harvest was assessed. Aside from a couple of families, crop creation is drilled on ranchers' own territory and with just restricted utilization of recruited work for exercises, like bug spray application, pesticide the board, and yield reaping. Assessed crop creation costs per hectare (ci) in this way fundamentally included expenses of manure, seed, and pesticides, just as certain wages for work, and costs that are related with crop collecting. The absolute yield spending plan Y was the amount of expenses caused for creation of chose crops by every individual studied family (barring land lease and worth of family work) in the 2012 July to September trimming season. Complete expense paid for crop creation in the LP models couldn't surpass this yearly amassed crop financial plan (Y). \\
+    \[ \sum_{i=1}^{n} c_{i}L_{i} \leq Y \]
+    \item \textbf{Aggregated Food Crop Production Self Sufficiency Constraint:}\\ The main informant takes interviews, focuses group discussions, and house based survey, these all results provided detailed information given of crop production, farming practices among households in the sample. According to these surveys, meeting the minimum household food crop production requirements that are typically phrased in terms of consumption needs is the foremost goal of crop production in our area of study. Therefore, the minimum aggregated food crop production requirement of each crop Qi, i = 1,2,3, . . . n, which is the sum of the minimum food crop production requirements, was included explicitly in the model. \\
+    \[  q_{i}L_{i} \geq Q_{i} \]
+    Finally, a cropland allocation model based on a Linear Programming (or a crop mix-selection model) with the objective of maximizing profit that is subject to the constraints of ecological, financial, and food production, was used to determine the maximum profit that could be theoretically realized while using LP.   
+  
+\end{itemize}
+\textbf{Example 1 formulating the problem into a Linear Programming problem:}
+\\\\
+Consider a household, which has 5 hectares of land and is meant for maize, soya beans, cotton and tobacco production. 
+\\\\
+Expected incomes for each of the crops (per hectares):
+\small{
+\begin{itemize}
+    \item Maize - \$285
+    \item Soya beans - \$1325
+    \item Cotton - \$525
+    \item Tobacco - \$5250
+\end{itemize}
+}
+The household would wish to crop the combination that helps them maximize their total annual net returns. Initially, before any optimization, the existing plan was to allocate 1.5 ha for maize, 0.5 ha for soya beans, 0.5 ha for cotton, 0.9 for tobacco.
+\\\\
+Decision variables:
+\small{
+\begin{itemize}
+    \item x1 =  hectares allocated for maize production
+    \item x2 = tons of maize produced for sale
+    \item x3 = tons of maize stored for family consumption
+    \item x4 = hectares allocated for soya bean production
+    \item x5 = hectares allocated for cotton production
+    \item x6 = hectares allocated for tobacco production
+\end{itemize}
+}
+The goal is to maximize the income at the end of year and store maize for the family consumption, subject to land, labour and cash available for production constraints.
+\\\\
+The objective function can be given as:
+\\\\
+\[ Z_{\text{max}} = 285x_2 + 1325x_4 + 525x_5 + 5250x_6
+\]
+The constraints can be given as:
+\small{
+\begin{itemize}
+    \item $x_1 + x_3 + x_5 + x_6 \leq 5$ (crop land constraint)
+    \item $30x_1 + 30x_4 + 40x_5 + 40x_6 \leq 312$ (labour constraint)
+    \item $-8x_1 + x_2 + x_3 \leq 0$ (maize accounting)
+    \item $-x_3 \leq -2$ (maize consumption)
+    \item $918x_1 + 730x_4 + 365x_5 + 1183x_6 \leq 3000$ (cash constraint)
+    \item $x_1,x_2,x_3,x_4,x_5,x_6 \geq 0	$ (non-negativity constraint)
+
+\end{itemize}
+}
+
+\begin{table}[h!]
+    \centering
+    \small
+    \setlength\tabcolsep{1pt}
+    \resizebox{0.49\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \hline
+         & \textbf{Activities} & \textbf{Maize} & \textbf{Sell Maize} & \textbf{Transfer Maize} & \textbf{Soya Beans} & \textbf{Cotton} & \textbf{Tobacco} & \\
+         \hline
+        \hline
+         \textbf{Resources} & \textbf{Units} & \textbf{ha} & \textbf{ton} & \textbf{ton} & \textbf{ha} & \textbf{ha} & \textbf{ha} & \textbf{RHS} \\
+         \hline
+           Crop land & ha & 1 & & & 1 & 1 & 1 & \leq 5 \\ 
+           \hline
+  Labour & days & 30 & & & 30 & 40 & 40 & \leq 312 \\ 
+  \hline
+  Maize accounting & ton & -8 & 1 & 1 & & & & \leq 0 \\ 
+  \hline
+  Maize consumption & ton & & & -1 & & & & \leq -2 \\ 
+  \hline
+  Operating capital & dollars & 918 & & & & & & \leq 3000 \\ 
+  \hline
+  Gross income & dollars & & 285 & & 1325 & 525 & 5250 &  \\ 
+  \hline
+    \end{tabular}}
+\end{table}
+
+\textbf{Conclusion of example 1-}
+On solving the problem, we get the following strategy for the farm. Optimum solution would be to produce 0.25 ha of Maize, no soya beans, no cotton and 2.34 ha of tobacco. This would generate a gross income of \$12,295.10
+\\\\
+\textbf{Optimum cropping pattern suggested from LP model:}
+\vspace{-0.5cm}
+\begin{table}[h!]
+    \centering
+    \small
+    \setlength\tabcolsep{1pt}
+    \resizebox{0.47\textwidth}{!}{\begin{tabular}{|c|c|c|c|c||}
+        \hline
+         & \textbf{Maize (ha)} & \textbf{Soya beans (ha)} & \textbf{Cotton (ha)} & \textbf{Tobacco (ha)} \\
+         \hline
+         \textbf{Production} & 0.25 & 0.00 & 0.00 & 2.34\\
+         \hline
+         \textbf{Gross Income (\$)} & 12,295.10 & & & \\ 
+          \hline
+    \end{tabular}}
+\end{table}
+\\
+2.59 ha of land would be used up, while 2.41 would be unused, 101 days of labour is utilized and 211 days are left over. All the capital, \$3000.00 would be used up. If more capital is sourced, the remaining land and labour days could be utilized, thus increasing the gross income.
+\\
+\textbf{Resource utilization}
+
+\begin{table}[h!]
+    \centering
+    \small
+    \setlength\tabcolsep{1pt}
+    \resizebox{0.4\textwidth}{!}{\begin{tabular}{|c|c|c|c|}
+        \hline
+         \textbf{Resources} & \textbf{Available} & \textbf{Usage} & \textbf{Left over} \\
+         \hline
+         \textbf{Crop land (ha)} & 5.00 & 2.59 & 2.41 \\
+         \hline
+         \textbf{Labour (days)} & 312.00 & 101.00 & 211.00 \\
+         \hline
+         \textbf{Operating capital (\$)} & 3000.00 & 3000.00 & 0.00 \\
+          \hline
+    \end{tabular}}
+\end{table}
+\\
+The statistics for resource utilization and cropping pattern of the originally planned solution are below:
+\\\\
+\textbf{Cropping Pattern Suggested by the Farmer’s Plan}
+\textbf{Resource utilization}
+\begin{table}[h!]
+    \centering
+    \small
+    \setlength\tabcolsep{1pt}
+    \resizebox{0.4\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|}
+        \hline
+         & \textbf{Maize (ha)} & \textbf{Soya beans (ha)} & \textbf{Cotton (ha)} & \textbf{Tobacco (ha)} \\
+         \hline
+         \textbf{Production} & 1.5 & 0.5 & 0.5 & 0.9 \\
+         \hline
+         \textbf{Gross Income (\$)} & 8,500.00 & & \\
+         \hline
+    \end{tabular}}
+\end{table}
+\\
+\textbf{Resource Utilization Suggested by the Farmer’s Plan}
+% now?
+ \begin{table}[h!]
+    \centering
+    \small
+    \setlength\tabcolsep{1pt}
+    \resizebox{0.4\textwidth}{!}{\begin{tabular}{|c|c|c|c|}
+        \hline
+         \textbf{Resources} & \textbf{Available} & \textbf{Usage} & \textbf{Left over} \\
+         \hline
+         \textbf{Crop land (ha)} & 5.00 & 3.40 & 1.60 \\
+         \hline
+         \textbf{Labour (days)} & 312.00 & 101.00 & 211.00 \\
+         \hline
+         \textbf{Operating capital (\$)} & 3000.00 & 3000.00 & 0.00 \\
+          \hline
+    \end{tabular}}
+\end{table}
+
+
+\section{Final Result and conclusion:}
+This project evaluates the output of cropland allocation when done with traditional methods and when implemented with linear-program based methods in terms of cash benefit and fulfilling the food,crop requirements,and also considered the relationship between effective land usage, The survey is a result from a rural community in  Ethiopia, and it suggests that the overall performance of this linear programming-based cropland allocation offers more profitable and higher production than current techniques.
+\\\\
+With traditional methods, households were unable to meet their food requirements. While through a linearly programmed land use distribution, crop production and land use more than doubled the profit potential. These less effective traditional methods caused environment to suffer with many harmful practices, such as forest encroachment and crop residue collection. Many of peasant and small farmers were using forest ecosystem services abusively and the role of natural and environmental resources as necessary. The downfall in financial returns from farm animals production and crop has forced them to adapt environmentally damaging practices, for example crop residue collection, illegal timber, fuelwood from forests nearby. While our Linear Programming models only imposed a constraint on the total land area for cropping, different kinds of  environmental factors, for example diminished cultivation in steep slopes, improved soil fertility management. Crop rotation is another essential consideration for cropland allocation, which might be considered constraints in a more complex-linear programming land allocation effort.
+\\\\
+At long last—gave that all vital data about information and result costs, land reasonableness, potential yield, and environment factors are set up—the aftereffect of this review upholds the extended utilization of further developed choice help apparatuses, for example, linear programming for cropland assignment definitively and in rural practices all the more for the most part. Doing as such will assist with tending to the twin destinations of reducing poverty and understanding the manageable use of normal and natural assets in smallholder agrarian scenes.
+\\\\
+Using linear programming in cropland allocation enhances crop production performance to maximize profit and improve food security while considering ecological, financial, and social factors.
+\\\\
+\begin{thebibliography}{00}
+\bibitem{b1} \url{https://www.mdpi.com/2073-445X/2/2/158}
+\bibitem{b2} \url{http://www.isca.in/IJMS/Archive/v2/i5/4.ISCA-RJMS-2013-004.pdf} 
+\bibitem{b3} \url{https://www.sciencedirect.com/science/article/pii/B9780123704504500157#:~:text=In%20Section%202%2C%20a%20linear,is%20specified%20for%20each%20crop.}
+\end{thebibliography}
+
+
+\end{document}
